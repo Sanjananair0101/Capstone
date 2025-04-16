@@ -36,7 +36,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <nav className="flex justify-between items-center">
           <Link href="/" className="text-white text-2xl font-bold">
-            Sanjana Nair
+            Sanjana S Nair
           </Link>
 
           {/* Desktop Navigation */}
@@ -44,6 +44,8 @@ export default function Navbar() {
             <NavLink href="#home">Home</NavLink>
             <NavLink href="#about">About</NavLink>
             <NavLink href="#work">Work</NavLink>
+            <NavLink href="#experience">Experience</NavLink>
+            <NavLink href="#skills">Skills</NavLink>
             <NavLink href="#contact">Contact</NavLink>
           </div>
 
@@ -66,6 +68,12 @@ export default function Navbar() {
             </MobileNavLink>
             <MobileNavLink href="#work" onClick={toggleMenu}>
               Work
+            </MobileNavLink>
+            <MobileNavLink href="#experience" onClick={toggleMenu}>
+              Experience
+            </MobileNavLink>
+            <MobileNavLink href="#skills" onClick={toggleMenu}>
+              Skills
             </MobileNavLink>
             <MobileNavLink href="#contact" onClick={toggleMenu}>
               Contact
